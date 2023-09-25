@@ -236,17 +236,149 @@ blockquote {
     color: var(--rosewood);
     text-shadow: 0 4px 2px #700B1790;
 }
-#media img {
-    width: 80vw;
-    height: auto;
+
+#media {
+    text-align: center;
+    padding-top: 20px;
 }
 
-#media h1, #video h1{
+#media img {
+    width: 100vw;
+    height: auto;
+    padding: 20px 0;
+}
+
+#video {
+    text-align: center;
+    padding: 10px 0 40px;
+}
+
+#video iframe {
+    width: 90vw;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #700B1790;
+    box-shadow: 0 8px 10px #0009;
+}
+
+#media h1, #video h1, #video h2 {
     text-align: center;
     letter-spacing: 8px;
     text-shadow: 0 5px 5px #190A0D90;
 }
 
+/* --- Contact --- */
+#titleContact {
+    background-image: url(../assets/image/contact/background.jpg);
+}
+
+#titleContact p, #titleContact h1 {
+    color: var(--psgray);
+    text-shadow: 0 3px 4px #0009;
+}
+
+#newsletter {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#newsletter h1 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin: 10px 10px;
+    padding: 10px 5px 20px;
+    border-bottom: 3px double #989A8C90;
+}
+
+#newsletter > p {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 40px;
+}
+
+#newsletter label {
+    display: flex;
+    justify-self: left;
+    padding-bottom: 10px;
+}
+
+#newsletter input {
+    margin: 0 0 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+#newsletter input:focus, select:focus {
+    color: var(--bgray);
+}
+
+#newsletter li > p {
+    font-size: 1.3em;
+    margin: 0 0 20px;
+}
+
+#newsletter input[type=submit] {
+    font-family:  'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+    padding: 10px;
+    color: var(--licorice);
+    text-shadow: 0 1px 2px #0009;
+    background-color: var(--bgray);
+    border: 2px solid #190A0D90;
+}
+
+#newsletter select, input[type=text], input[type=tel], input[type=email] {
+    width: 80vw;
+    color: var(--psgray);
+    background-color: #0009;
+    border: 2px solid #3E697A90;
+    border-radius: 5px;
+}
+
+#newsletter .checkbox {
+    font-size: 0.5em;
+    padding: 10px 50px 0;
+}
+
+#newsletter .checkbox label {
+    padding-top: 10px;
+}
+
+#newsletter .checkbox input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+#genderRadio {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#genderRadio .radio {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+}
+
+#genderRadio .radio label {
+    padding: 0 5px 5px 10px;
+}
+
+#genderRadio .radio label > p {
+    padding: 4px 10px 0 0;
+    margin: 0;
+}
+
+#genderRadio .radio input[type=text] {
+        width: 40vw;
+        padding: 3px 0 0;
+}
 
 /* --- Footer --- */
 footer {
@@ -316,6 +448,12 @@ footer h2 {
         font-size: 30px;
     }
 
+    .title {
+        letter-spacing: 8px;
+        font-size: 1.4em;
+        padding: 70px 0;
+    }
+
     /* --- Index --- */
     .home article {
         width: 80vw;
@@ -338,10 +476,8 @@ footer h2 {
     }
 
     /* Biography */
-    #titleBiography {
-        letter-spacing: 8px;
-        font-size: 1.4em;
-        padding: 70px 0;
+    #titleBiography h1 {
+        text-shadow: 0 7px 5px #190A0D90;
     }
 
     #biography {
@@ -355,6 +491,108 @@ footer h2 {
 
     #discography figcaption {
         font-size: 1.4em;
+    }
+
+    /* Portfolio */
+    #video {
+        margin-top: 1em;
+    }
+
+    #media img {
+        width: 45vw;
+        padding: 3px 0;
+    }
+
+    #media div {
+        columns: 2;
+        column-gap: 1px;
+        margin: 0 30px
+    }
+    
+    #video iframe {
+        width: 90vw;
+        height: 15em;
+        margin: 10px 0;
+        border: 0.15em solid #700B1790;
+        box-shadow: 0 0.35em 0.5em #0009;
+    }
+    
+    #media h1, #video h1, #video h2 {
+        font-size: 1.8em;
+        letter-spacing: 8px;
+        text-shadow: 0 5px 5px #190A0D90;
+    }
+
+    /* --- Contact --- */
+    #titleContact {
+        background-image: url(../assets/image/contact/background.jpg);
+    }
+
+    #titleContact p, #titleContact h1 {
+        color: var(--psgray);
+        text-shadow: 0 6px 5px #0009;
+    }
+
+    #newsletter {
+        margin-bottom: 1.2em;
+    }
+
+    #newsletter label {
+        padding-bottom: 0.5em;
+    }
+
+    #newsletter input {
+        padding: 0.3em;
+    }
+
+    #newsletter li > p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+
+    #newsletter input[type=submit] {
+        font-size: 1em;
+        margin: 1.5em 0;
+    }
+
+    #newsletter .checkbox {
+        font-size: 0.7em;
+        padding: 0.8em 5em 0;
+    }
+
+    #newsletter .checkbox label {
+        padding-top: 1.5em;
+    }
+    
+    #newsletter .checkbox input[type=checkbox] {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    #genderRadio {
+        padding: 0 1.5em;
+    }
+
+    #genderRadio .radio {
+        padding: 0.3em;
+    }
+
+    #genderRadio .radio label {
+        padding: 0 0.7em 0.1em 0.5em;
+    }
+
+    #genderRadio .radio label > p {
+        padding-top: 0.01em;
+    }
+
+    #genderRadio .radio input[type=radio] {
+        width: 0.7em;
+        height: 0.7em;
+        margin-top: 0.2em;
+    }
+
+    #genderRadio .radio input[type=text] {
+            padding-top: 0.2em;
     }
 
     /* --- Footer --- */
@@ -412,6 +650,12 @@ footer h2 {
         font-size: 50px;
     }
 
+    .title {
+        letter-spacing: 15px;
+        font-size: 1.1em;
+        padding: 3em 0;
+    }
+
     /* --- Index Main --- */
     .home {
         display: flex;
@@ -462,18 +706,12 @@ footer h2 {
 
 
     /* Biography */
-    #titleBiography {
-        letter-spacing: 15px;
-        font-size: 1.1em;
-        padding: 3em 0;
-    }
-
     #titleBiography p {
         text-shadow: 0 5px 7px #989A8C90;
     }
 
     #titleBiography h1 {
-        text-shadow: 0 9px 8px #190A0D90;
+        text-shadow: 0 0.05em 0.05em #190A0D90;
     }
 
     #biography {
@@ -482,6 +720,7 @@ footer h2 {
     }
 
     #discography {
+        font-size: 0.5em;
         padding: 0.8em 0 2em;
     }
 
@@ -500,7 +739,7 @@ footer h2 {
     }
 
     #discography img {
-        width: 35vw;
+        width: 30vw;
     }
 
     #discography figure {
@@ -513,12 +752,141 @@ footer h2 {
     }
 
 
-    /* Portfolio Main */
+    /* Portfolio */
+    #titlePortfolio h1 {
+        text-shadow: 0 0.05em 0.05em #700B1790;
+    }
 
+    #video {
+        margin-top: 1.8em;
+    }
 
+    #media img {
+        width: 38vw;
+        padding: 0.01em 0;
+    }
 
-    /* Contact Main */
-   
+    #media div {
+        columns: 2;
+        column-gap: 0;
+        margin: 0 3.5em;
+    }
+    
+    #video iframe {
+        width: 45vw;
+        height: 8em;
+        margin: 0.5em 0;
+        border: 0.07em solid #700B1790;
+        box-shadow: 0 0.3em 0.3em #0009;
+    }
+
+    #media h1 {
+        padding: 0.5em 0;
+    }
+    
+    #media h1, #video h1 {
+        font-size: 1.8em;
+        letter-spacing: 0.3em;
+        text-shadow: 0 0.12em 8px #190A0D90;
+    }
+
+    #video h2 {
+        font-size: 1.2em;
+    }
+
+    /* --- Contact --- */
+    #titleContact p, #titleContact h1 {
+        text-shadow: 0 0.08em 0.05em #0009;
+    }
+
+    #newsletter {
+        margin-bottom: 1.2em;
+    }
+
+    #newsletter h1 {
+        font-size: 1.4em;
+        letter-spacing: 0.1em;
+        margin: 0.5em 0.5em;
+        padding: 0.1em 1em 0.6em;
+        border-bottom: 0.1em double #989A8C90;
+    }
+
+    #newsletter form {
+        font-size: 0.4em;
+    }
+
+    #newsletter input {
+        margin-bottom: 1em;
+        padding: 0.3em;
+    }
+
+    #newsletter select {
+        width: 40vw;
+        padding: 0.12em;
+    }
+
+    #newsletter > p {
+        font-size: 0.8em;
+        padding: 0.5em 5em;
+    }
+
+    #newsletter li > p {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+
+    #newsletter input[type=submit] {
+        font-size: 1.6em;
+        margin: 1em 0;
+    }
+
+    #newsletter input[type=text] {
+        width: 40vw;
+    }
+
+    #newsletter input[type=tel], input[type=email] {
+        width: 84vw;
+    }
+
+    #newsletter .checkbox {
+        display: flex;
+        flex-flow: row;
+        font-size: 0.8em;
+        padding: 1em 1em 1em;
+    }
+
+    #newsletter .checkbox input[type=checkbox] {
+        width: 1.2em;
+        height: 1.2em;
+        margin: 0.6em 1em 0 0;
+    }
+
+    #genderRadio {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 2em;
+    }
+
+    #genderRadio .radio {
+        padding: 1em;
+    }
+
+    #genderRadio .radio label {
+        padding: 0 1em 1.1em 0.5em;
+    }
+
+    #genderRadio .radio label > p {
+        padding: 0.1em 1em 0 0;
+    }
+
+    #genderRadio .radio input[type=text] {
+            width: 40vw;
+            padding: 3px 0 0;
+    }
+
+    #genderRadio div:last-child input[type=radio] {
+        margin-bottom: 2.1em;
+    }
 
     /* --- Footer --- */
     footer {

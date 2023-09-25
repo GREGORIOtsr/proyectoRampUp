@@ -42,6 +42,89 @@
             <h1>Contact</h1>
         </article>
 
+        <article id="newsletter">
+            <h1>Subscribe to Haru Nemuri Newsletter!</h1>
+            <p>Subscribe to our newsletter and stay updated about latest releases, new tour dates and more.</p>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Gregorio" required>
+                    </li>
+                    <li>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Tremont" required>
+                    </li>
+                    <li>
+                        <p>Gender</p>
+                        <div id="genderRadio">
+                            <div class="radio">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" name="gender" id="nonBinary" value="non_binary">
+                                <label for="nonBinary">Non-binary</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" name="gender" id="none" value="none">
+                                <label for="none">Rather not say</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" name="gender" id="other" value="other">
+                                <label for="other">
+                                    <p>Other</p>
+                                    <input type="text" name="gender" id="other_gender">
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="pronouns">Pronouns</label>
+                        <input type="text" name="pronouns" id="pronouns" placeholder="He/Him, She/Her, They/Them...">
+                    </li>
+                    <li>
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="brazil">Brazil</option>
+                            <option value="canada">Canada</option>
+                            <option value="japan">Japan</option>
+                            <option value="korea">Korea</option>
+                            <option value="spain">Spain</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                    </li>
+                    <li>
+                        <label for="confirmEmail">Confirm Email</label>
+                        <input type="email" name="confirmEmail" id="confirmEmail" placeholder="example@example.com" required>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="policy" id="policy" value="acceptPolicy" required>
+                        <label for="terms">I have read and agree to the privacy policy</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="publicity" id="publicity" value="acceptPublicity" required>
+                        <label for="publicity">I agree to receive marketing communications about merchandise</label>
+                    </li>
+                </ul>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </article>
     </main>
 
     <footer>
