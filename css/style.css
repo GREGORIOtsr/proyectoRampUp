@@ -1,0 +1,541 @@
+/* ---------- Font rules ---------- */
+@font-face {
+    font-family: 'Orbitron', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Orbitron&display=swap);
+}
+
+@font-face {
+    font-family: 'Victor Mono', monospace;
+    src: url(https://fonts.googleapis.com/css2?family=Orbitron&family=Victor+Mono&display=swap);
+}
+
+
+/* ---------- Color pallet ---------- */
+:root {
+    --psgray: #3E697A;
+    --bgray: #989A8C;
+    --onyx: #32373A;
+    --licorice: #190A0D;
+    --rosewood: #700B17;
+}
+
+
+/* ---------- General rules ---------- */
+* {
+    font-family: 'Victor Mono', monospace;
+    color: var(--bgray);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    background-image: linear-gradient(#190A0D70, #32373A70, #3E697A70);
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header/nav --- */
+header {
+    position: sticky;
+    background-color: var(--licorice);
+    z-index: 10;
+    width: auto;
+    max-height: fit-content;
+    box-shadow: 0 5px 6px #190A0D70;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 5px;
+    margin: 10px 0 10px;
+}
+
+a {
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--rosewood);
+    text-decoration: none;
+    padding: 5px;
+    text-shadow: -3px 3px #700B1750;
+}
+
+
+/* --- Main --- */
+
+main {
+    font-size: 20px;
+}
+
+main h1, main h2 {    
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.title {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: fit-content;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 100%;
+    font-size: 1.1em;
+    padding: 60px 0;
+}
+
+.title p {
+    color: #989A8C90;
+    text-shadow: 0 5px 2px #989A8C50;
+    margin: 0;
+}
+
+.title h1 {
+    color: var(--bgray);   
+    margin: 0;
+    text-shadow: 0 4px 2px #190A0D90;
+}
+
+/* --- Index --- */
+.home {
+    display: inline-flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.home article {
+    text-align: center;
+    align-self: center;
+    width: auto;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-shadow: 3px 3px 4px #0005;
+}
+
+.home img {
+    object-fit: contain;
+    max-width: 100vw;
+    filter: drop-shadow(0 -8px 8px #0003);
+    filter: drop-shadow(0 8px 8px #0003);
+}
+
+#welcome {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 0;
+    width: 100%;
+    height: 250px;
+}
+
+#titleBg {
+    background-image: url(../assets/video/titleBackground.gif);
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+#welcome img {
+    position: absolute;
+    align-self: center;
+    width: auto;
+    max-height: 100px;
+    filter: drop-shadow(10px 10px 2px #000800);
+}
+
+#home1 {
+    box-shadow: 0 -5px 6px #0005;
+}
+
+#home2 {
+    flex-direction: column;
+}
+
+#lyrics {
+    margin-top: 0;
+    text-align: left;
+    white-space: pre-line;
+}
+
+#home3 div article {
+    padding: 30px 10px;
+}
+
+#home3 article:last-of-type {
+    padding-top: 0;
+}
+
+/* Biography */
+#titleBiography {
+    background-image: url(../assets/image/biography/background.jpg);
+}
+
+#biography {
+    font-size: 0.9em;
+    text-align: left;
+    padding: 20px 20px 0;
+}
+
+#discography {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#discography h1, #discography h2 {
+    text-shadow: 0 8px 8px #190A0D90;
+    padding-top: 20px;
+}
+
+#discography img {
+    width: 80vw;
+    height: auto;
+}
+
+#discography figure {
+    padding-bottom: 20px;
+}
+
+#discography figcaption {
+    padding-top: 10px;
+}
+
+/* Portfolio */
+#titlePortfolio {
+    background-image: url(../assets/image/portfolio/background.jpeg);
+}
+
+#titlePortfolio p {
+    color: #700B1790;
+    text-shadow: 0 5px 2px #700B1790;
+}
+
+#titlePortfolio h1 {
+    color: var(--rosewood);
+    text-shadow: 0 4px 2px #700B1790;
+}
+#media img {
+    width: 80vw;
+    height: auto;
+}
+
+#media h1, #video h1{
+    text-align: center;
+    letter-spacing: 8px;
+    text-shadow: 0 5px 5px #190A0D90;
+}
+
+
+/* --- Footer --- */
+footer {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--licorice);
+    width: 100%;
+    max-height: fit-content;
+    padding: 5px;
+    box-shadow: 0 -3px 8px #0008;
+}
+
+footer h2 {
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--rosewood);
+    margin: 20px 0 0;
+    padding-bottom: 30px;
+    align-self: center;
+    justify-self: center;
+    text-shadow: 3px 3px 5px #0005;
+}
+
+#socials {
+    display: inline-flex;
+    justify-content: space-between;
+    align-self: center;
+    color: var(--rosewood);
+    filter: invert(9%) sepia(45%) saturate(7063%) hue-rotate(346deg) brightness(99%) contrast(100%);
+}
+
+#socials a {
+    margin: 0 10px 10px;
+}
+
+
+
+/* ---------- Media quary tablet ---------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+
+    /* --- Header/nav --- */
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li {
+        padding: 10px 10px;
+    }
+
+    a {
+        font-size: 20px;
+        letter-spacing: 8px;
+        padding: 5px;
+    }
+
+
+    /* --- Main --- */
+    main {
+        font-size: 30px;
+    }
+
+    /* --- Index --- */
+    .home article {
+        width: 80vw;
+        padding: 1.5em 1em;
+        font-size: 30px;
+    }
+
+    #welcome {
+        padding-top: 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    #welcome img {
+        max-height: 180px;
+    }
+
+    #home3 div {
+        align-self: center;
+    }
+
+    /* Biography */
+    #titleBiography {
+        letter-spacing: 8px;
+        font-size: 1.4em;
+        padding: 70px 0;
+    }
+
+    #biography {
+        font-size: 0.9em;
+        padding: 40px 40px 0;
+    }
+
+    #discography {
+        padding: 30px 0;
+    }
+
+    #discography figcaption {
+        font-size: 1.4em;
+    }
+
+    /* --- Footer --- */
+    footer {
+        padding: 15px 0;
+    }
+
+    footer h2 {
+        font-size: 40px;
+        letter-spacing: 8px;
+    }
+
+    #socials {
+        padding-bottom: 15px;
+    }   
+
+}
+
+/* ---------- Media quary pc/laptop ---------- */
+@media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1600px) {
+
+    /* --- Header/nav --- */
+    header {
+        top: 0;
+        width: 100%;
+        box-shadow: 0 5px 6px #190A0D70;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin: 30px 20px;
+    }
+
+    a {
+        font-size: 25px;
+        letter-spacing: 6px;
+        border-radius: 15%;
+    }
+
+    a:hover {
+        color: var(--psgray);
+        text-decoration: underline var(--psgray);
+        text-shadow: 3px 3px #3E697A20;
+        
+        border-color: black;
+    }
+
+    /* --- Main --- */
+    main {
+        font-size: 50px;
+    }
+
+    /* --- Index Main --- */
+    .home {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .home article {
+        text-align: center;
+        padding: 0 50px;
+        margin: 0;
+        font-size: clamp(15px, 1.4vw, 30px);
+    }
+
+    .home img {
+        max-width: calc(50vw - ((100vw - 100%)/2));
+    }
+
+    #welcome {
+        height: 600px;
+    }
+
+    #welcome img {
+        width: auto;
+        min-height: 250px;
+    }
+
+    #home2 {
+        flex-direction: row;
+    }
+
+    #lyrics {
+        text-align: left;
+        white-space: pre-line;
+        justify-content: flex-start;
+    }
+
+    #home3 div {
+        align-self: center;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 50px;
+    }
+
+    #home3 article:last-of-type {
+        order: 0;
+    }
+
+
+    /* Biography */
+    #titleBiography {
+        letter-spacing: 15px;
+        font-size: 1.1em;
+        padding: 3em 0;
+    }
+
+    #titleBiography p {
+        text-shadow: 0 5px 7px #989A8C90;
+    }
+
+    #titleBiography h1 {
+        text-shadow: 0 9px 8px #190A0D90;
+    }
+
+    #biography {
+        font-size: 0.5em;
+        padding: 3em 6em 0;
+    }
+
+    #discography {
+        padding: 0.8em 0 2em;
+    }
+
+    #discography h1, #discography h2 {
+        letter-spacing: 8px;
+        word-spacing: 20px;
+        text-shadow: -8px 10px 5px #190A0D90;
+        padding-top: 0.5em;
+    }
+
+    #discography div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+
+    #discography img {
+        width: 35vw;
+    }
+
+    #discography figure {
+        padding: 0 1em 1em;
+    }
+
+    #discography figcaption {
+        padding-top: 1em;
+        font-size: 0.7em;
+    }
+
+
+    /* Portfolio Main */
+
+
+
+    /* Contact Main */
+   
+
+    /* --- Footer --- */
+    footer {
+        width: 100%;
+        padding: 30px;
+    }
+
+    footer h2 {
+        font-size: 40px;
+        letter-spacing: 8px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+
+    #socials a {
+        margin: 0 20px 10px;
+    }
+
+}
