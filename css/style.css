@@ -148,6 +148,14 @@ blockquote {
     height: 250px;
 }
 
+#welcome img {
+    position: absolute;
+    align-self: center;
+    width: auto;
+    max-height: 100px;
+    filter: drop-shadow(10px 10px 2px #000800);
+}
+
 #titleBg {
     background-image: url(../assets/video/titleBackground.gif);
     background-position: center;
@@ -156,14 +164,6 @@ blockquote {
     width: 100%;
     height: auto;
     z-index: -1;
-}
-
-#welcome img {
-    position: absolute;
-    align-self: center;
-    width: auto;
-    max-height: 100px;
-    filter: drop-shadow(10px 10px 2px #000800);
 }
 
 #home1 {
@@ -245,7 +245,7 @@ blockquote {
 #media img {
     width: 100vw;
     height: auto;
-    padding: 20px 0;
+    padding: 20px 0;;
 }
 
 #video {
@@ -296,6 +296,11 @@ blockquote {
     padding: 0 40px;
 }
 
+#newsletter li > p {
+    font-size: 1.3em;
+    margin: 0 0 20px;
+}
+
 #newsletter label {
     display: flex;
     justify-self: left;
@@ -310,11 +315,7 @@ blockquote {
 
 #newsletter input:focus, select:focus {
     color: var(--bgray);
-}
-
-#newsletter li > p {
-    font-size: 1.3em;
-    margin: 0 0 20px;
+    background-color: var(--onyx);
 }
 
 #newsletter input[type=submit] {
@@ -497,6 +498,14 @@ footer h2 {
     #video {
         margin-top: 1em;
     }
+    
+    #video iframe {
+        width: 90vw;
+        height: 15em;
+        margin: 10px 0;
+        border: 0.15em solid #700B1790;
+        box-shadow: 0 0.35em 0.5em #0009;
+    }
 
     #media img {
         width: 45vw;
@@ -507,14 +516,6 @@ footer h2 {
         columns: 2;
         column-gap: 1px;
         margin: 0 30px
-    }
-    
-    #video iframe {
-        width: 90vw;
-        height: 15em;
-        margin: 10px 0;
-        border: 0.15em solid #700B1790;
-        box-shadow: 0 0.35em 0.5em #0009;
     }
     
     #media h1, #video h1, #video h2 {
@@ -761,9 +762,33 @@ footer h2 {
         margin-top: 1.8em;
     }
 
+    #media {
+        margin: 0 0.2em
+    }
+
+    #media h1 {
+        padding: 0.5em 0;
+    }
+
+    #video h2 {
+        font-size: 1.2em;
+    }
+    
+    #media h1, #video h1 {
+        font-size: 1.8em;
+        letter-spacing: 0.3em;
+        text-shadow: 0 0.12em 8px #190A0D90;
+    }
+
     #media img {
         width: 38vw;
         padding: 0.01em 0;
+        transition: .8s ease-in-out
+    }
+
+    #media img:hover {
+        transform: scale(1.2);
+        box-shadow: 0 1em 1em #0009;
     }
 
     #media div {
@@ -778,20 +803,6 @@ footer h2 {
         margin: 0.5em 0;
         border: 0.07em solid #700B1790;
         box-shadow: 0 0.3em 0.3em #0009;
-    }
-
-    #media h1 {
-        padding: 0.5em 0;
-    }
-    
-    #media h1, #video h1 {
-        font-size: 1.8em;
-        letter-spacing: 0.3em;
-        text-shadow: 0 0.12em 8px #190A0D90;
-    }
-
-    #video h2 {
-        font-size: 1.2em;
     }
 
     /* --- Contact --- */
